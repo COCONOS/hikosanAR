@@ -17,14 +17,14 @@
 -->
   <body style='margin : 0px; overflow: hidden;'>
 
-    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best; patternRatio=0.9">
+    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best;">
 
       <a-assets>
         <a-asset-item id="obj" src="model_obj/hi.obj"></a-asset-item>
         <a-asset-item id="mtl" src="model_obj/hi.mtl"></a-asset-item>
       </a-assets>
 
-      <a-marker preset="custom" type='pattern' url='marker/pattern-QR_5f0822_090.patt'>
+      <a-marker preset="custom" type='pattern' url='marker/pattern-QR_5f0822_050.patt'>
         <a-obj-model id="hi" src="#obj" mtl="#mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
       </a-marker>
 
