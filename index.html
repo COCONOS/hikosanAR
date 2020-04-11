@@ -14,19 +14,18 @@
   </head>
 
   <body style='margin : 0px; overflow: hidden;'>
-    <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
-    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best; patternRatio=0.90">
 
-      <!-- OBJ形式のCGモデルの読み込み -->
+    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best; patternRatio=0.90;">
+
       <a-assets>
-        <a-asset-item id="obj" src="model_obj/hi.obj"></a-asset-item>   <!-- objファイル -->
-        <a-asset-item id="mtl" src="model_obj/hi.mtl"></a-asset-item>   <!-- mtlファイル -->
+        <a-asset-item id="obj" src="model_obj/hi.obj"></a-asset-item>
+        <a-asset-item id="mtl" src="model_obj/hi.mtl"></a-asset-item>
       </a-assets>
 
-      <a-marker preset="custom" type='pattern' url='marker/pattern-QR_5f0822.patt'>
-        <!--<a-entity id="hi" src="#obj" mtl="#mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-entity>-->
+      <a-marker preset='custom' type='pattern' url='marker/pattern-QR_5f0822.patt'>
         <a-obj-model id="hi" src="#obj" mtl="#mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
       </a-marker>
+
       <!--
       <a-marker preset="hiro">
         <a-obj-model
@@ -38,7 +37,7 @@
         </a-obj-model>
       </a-marker>
       -->
-      <!-- AR用のカメラを置く -->
+
       <a-entity camera></a-entity>
     </a-scene>
   </body>
