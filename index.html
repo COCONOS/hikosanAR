@@ -7,20 +7,19 @@
 
   <body style='margin : 0px; overflow: hidden;'>
     <!-- A-Frame の VR空間に AR.js を紐づける（デバッグUIを非表示） -->
-    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best;">
+    <a-scene embedded arjs="debugUIEnabled:false; trackingMethod:best; patternRatio=0.90">
 
       <!-- OBJ形式のCGモデルの読み込み -->
       <a-assets>
         <a-asset-item id="obj" src="model_obj/hi.obj"></a-asset-item>   <!-- objファイル -->
         <a-asset-item id="mtl" src="model_obj/hi.mtl"></a-asset-item>   <!-- mtlファイル -->
       </a-assets>
-      <!--
-      <a-marker type='pattern' url='marker/pattern-QR_5f0822.patt'>
+
+      <a-marker-camera type='pattern' url='marker/pattern-QR_5f0822.patt'>
         <a-obj-model id="hi" src="#obj" mtl="#mtl" position="0 0 0" scale="0.1 0.1 0.1" rotation="0 0 0"></a-obj-model>
-      </a-marker>
-      -->
+      <a-marker-camera>
+      <!--
       <a-marker preset="hiro">
-        <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
         <a-obj-model
           src="#obj"
           mtl="#mtl"
@@ -29,7 +28,7 @@
           rotation="0 0 0">
         </a-obj-model>
       </a-marker>
-
+      -->
       <!-- AR用のカメラを置く -->
       <a-entity camera></a-entity>
     </a-scene>
