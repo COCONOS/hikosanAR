@@ -1,0 +1,49 @@
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pCube7Shape_color.png
+Ni 1.00
+newmtl lambert6SG
+illum 4
+Kd 1.00 0.06 0.10
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl lambert9SG
+illum 4
+Kd 1.00 1.00 1.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl svgBlinn2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pCube7Shape_svgBlinn2_color.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl svgBlinn4SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pCube11Shape_svgBlinn4_color.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+newmtl svgBlinn10SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd pCube12Shape_svgBlinn10_color.png
+Ni 1.00
+Ks 0.50 0.50 0.50
